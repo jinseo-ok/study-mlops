@@ -1,5 +1,5 @@
 name: Lint Code Base
-
+# push 가 발생했을 떄
 on: push
 
 jobs:
