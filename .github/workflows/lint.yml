@@ -1,5 +1,5 @@
 name: Lint Code Base
-# push 가 발생했을 떄
+
 on: push
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter@v3.17.0
         env:
-          DEFAULT_BRANCH: main
+          DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_PYTHON_BLACK: true
           # VALIDATE_PYTHON_FLAKE8: true
